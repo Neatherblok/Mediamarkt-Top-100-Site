@@ -519,15 +519,16 @@ for(i = 1; i - 1 < 100; i++){
     let songPoints = Object.values(song)[2];
     songPoints = Number(songPoints);
     const tr = document.createElement("tr");
-    const place = document.createElement("td");
     const name = document.createElement("td");
     const artist = document.createElement("td");
     const points = document.createElement("td");
-    place.innerHTML = i;
-    name.innerHTML = songName;
+    const container = document.createElement("div");
+    container.classList.add("circle")
+    container.innerHTML = i;
+    name.innerHTML = `<strong>${songName}</strong>`;
     artist.innerHTML = songArtist;
     points.innerHTML = songPoints;
-    tr.appendChild(place);
+    tr.appendChild(container);
     tr.appendChild(name);
     tr.appendChild(artist);
     tr.appendChild(points);
