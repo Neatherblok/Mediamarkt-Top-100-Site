@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +8,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/CSS/main.css" />
 </head>
-<body>
-        
-    <table>
-        <thead>
-            <tr>
-                <th>Positie</th>
-                <th></th>
-                <th></th>
-                <th>Punten</th>
-            </tr>
-        </thead>
-        <tbody id="currentList">
 
-        </tbody>
-    </table>
+<body id="body">
+
+    <div id="selectionScreen" class="selectionScreen">
+    <form  id="form">
+        <select name="list" id="list">
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+        </select>
+        <input type="submit" value="submit" id="submit">
+    </form>
+    </div>
 
     <script src="./assets/JS/app.js"></script>
 </body>
+
 </html>
