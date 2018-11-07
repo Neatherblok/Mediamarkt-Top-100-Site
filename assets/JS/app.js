@@ -5,6 +5,13 @@ const form = document.getElementById("form");
 const submitButton = document.getElementById('submit');
 submitButton.addEventListener('click', clickEventExecuter);
 
+console.log("NEW: gone to homepage.")
+console.log("----------------------------------------------")
+
+function goBackExecuter(event) {
+    location.reload();
+}
+
 function clickEventExecuter(event) {
 
     var top100list_2018 = [
@@ -518,39 +525,70 @@ function clickEventExecuter(event) {
     event.preventDefault();
     var sel = document.getElementById("list");
     value = sel.options[sel.selectedIndex].value; // or just sel.value
-    console.log(value);
+    //console.log(value);
 
     if (value == 2018) {
-        console.log("yes")
+        console.log("NEW: start loading top 100 list of 2018.")
+        console.log("--------------------------------------------")
         list2018();
     }
+    /*else if (value == 2017) {
+        console.log("NEW: start loading top 100 list of 2017.")
+        console.log("--------------------------------------------")
+        list2017();
+    }*/
     else {
-        form.reset();
+        if (!document.getElementById("selectionScreen").contains(document.getElementById("p"))) {
+            const pCreate = document.createElement("p")
+            pCreate.innerHTML = "Deze lijst is nog niet beschikbaar."
+            pCreate.setAttribute("id", "p")
+            selectionScreen.appendChild(pCreate);
+        }
     }
 
-    function list2018() {
-
-        console.log(value)
-
+    function table(tbody){
         body.innerHTML = '';
-        const table = document.createElement("table");
+        const backButton = document.createElement("input");
+        backButton.setAttribute("type", "submit");
+        backButton.setAttribute("value", "Ga terug");
+        backButton.setAttribute("id", "goBack");
+        backButton.classList.add("goBack");
+        const formArea = document.createElement("form");
+        formArea.appendChild(backButton);
+        var table = document.createElement("table");
         const thead = document.createElement("thead");
         const trHead = document.createElement("tr");
+        trHead.classList.add("trHead");
         const positie = document.createElement("th");
         positie.innerHTML = "positie";
         const th = document.createElement("th");
         const th2 = document.createElement("th");
         const punten = document.createElement("th");
         punten.innerHTML = "Punten";
-        const tbody = document.createElement("tbody");
+        const trButton = document.createElement("tr");
+        trButton.classList.add("trButton");
+        const tdButton = document.createElement("td");
+        tdButton.setAttribute("colspan", "4")
+        tdButton.appendChild(formArea);
+        //console.log(formArea)
+        
+        trButton.appendChild(tdButton);
         trHead.appendChild(positie);
         trHead.appendChild(th);
         trHead.appendChild(th2);
         trHead.appendChild(punten);
+        thead.appendChild(trButton);
         thead.appendChild(trHead);
         table.appendChild(thead);
+        body.appendChild(table);
         table.appendChild(tbody);
         body.appendChild(table);
+        
+    }
+
+    function list2018() {
+
+        const tbody = document.createElement("tbody");
 
         var byDate = top100list_2018.slice(0);
         byDate.sort(function (a, b) {
@@ -579,10 +617,18 @@ function clickEventExecuter(event) {
             tr.appendChild(artist);
             tr.appendChild(points);
             tbody.appendChild(tr);
-            console.log(songName);
-            console.log(songArtist);
-            console.log(songPoints);
-            console.log('--------------------')
+            //console.log(songName);
+            //console.log(songArtist);
+            //console.log(songPoints);
+            //console.log('--------------------')
         }
+
+        table(tbody)
+
+        const goBackButton = document.getElementById('goBack');
+        goBackButton.addEventListener('click', goBackExecuter);
+
+        console.log("NEW: top 100 list of 2018 has been loaded succesfully.")
+        console.log("--------------------------------------------")
     }
 }
