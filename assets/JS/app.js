@@ -550,7 +550,7 @@ function clickEventExecuter(event) {
         body.innerHTML = '';
         const backButton = document.createElement("input");
         backButton.setAttribute("type", "submit");
-        backButton.setAttribute("value", "Ga terug");
+        backButton.setAttribute("value", "selecteer lijst");
         backButton.setAttribute("id", "goBack");
         backButton.classList.add("goBack");
         const formArea = document.createElement("form");
