@@ -16,70 +16,70 @@ function clickEventExecuter(event) {
 
     var top100list_2018 = [
         {
-            name: 'Verleden tijd', artist: 'Frenna', points: 421
+            name: 'Verleden tijd', artist: 'Frenna', points: 456
         },
         {
-            name: 'In my mind', artist: 'Dynoro', points: 412
+            name: 'In my mind', artist: 'Dynoro', points: 448
         },
         {
-            name: 'Promises', artist: 'Calvin Harris', points: 385
+            name: 'Promises', artist: 'Calvin Harris', points: 424
         },
         {
-            name: 'Shotgun', artist: 'George Ezra', points: 568
+            name: 'Shotgun', artist: 'George Ezra', points: 606
         },
         {
-            name: 'Rise', artist: 'Jonas Blue', points: 528
+            name: 'Rise', artist: 'Jonas Blue', points: 557
         },
         {
-            name: 'Happier', artist: 'Marshmello', points: 296
+            name: 'Happier', artist: 'Marshmello', points: 330
         },
         {
-            name: 'Be alright', artist: 'Dean Lewis', points: 211
+            name: 'Be alright', artist: 'Dean Lewis', points: 241
         },
         {
-            name: 'Youngblood', artist: '5SOS', points: 511
+            name: 'Youngblood', artist: '5SOS', points: 533
         },
         {
-            name: 'Electricity', artist: 'Silk City', points: 260
+            name: 'Electricity', artist: 'Silk City', points: 281
         },
         {
-            name: 'Goodbye', artist: 'Jason Derulo', points: 149
+            name: 'Goodbye', artist: 'Jason Derulo', points: 165
         },
         {
-            name: 'Djadja', artist: 'Aya Nakamura', points: 400
+            name: 'Djadja', artist: 'Aya Nakamura', points: 411
         },
         {
-            name: 'Taki taki', artist: 'DJ Snake', points: 150
+            name: 'Taki taki', artist: 'DJ Snake', points: 182
         },
         {
-            name: 'High on Life', artist: 'Martin Garrix', points: 247
+            name: 'High on Life', artist: 'Martin Garrix', points: 265
         },
         {
-            name: 'Let you love me', artist: 'Rita Ora', points: 156
+            name: 'Let you love me', artist: 'Rita Ora', points: 183
         },
         {
-            name: 'Whenever', artist: 'Kris Kross Amsterdam', points: 524
+            name: 'Whenever', artist: 'Kris Kross Amsterdam', points: 529
         },
         {
             name: 'I love it', artist: 'Kanye West', points: 67
         },
         {
-            name: 'Natural', artist: 'Imagine Dragons', points: 232
+            name: 'Natural', artist: 'Imagine Dragons', points: 356
         },
         {
-            name: 'Hurt somebody', artist: 'Noah Kahan', points: 227
+            name: 'Hurt somebody', artist: 'Noah Kahan', points: 228
         },
         {
-            name: 'Lost in Japan', artist: 'Zedd', points: 88
+            name: 'Lost in Japan', artist: 'Zedd', points: 97
         },
         {
-            name: 'Eastside', artist: 'Benny Blanco', points: 105
+            name: 'Eastside', artist: 'Benny Blanco', points: 120
         },
         {
-            name: 'Happy now', artist: 'Zedd', points: 345
+            name: 'Happy now', artist: 'Zedd', points: 348
         },
         {
-            name: 'Duurt te lang', artist: 'Davina Michelle', points: 136
+            name: 'Duurt te lang', artist: 'Davina Michelle', points: 176
         },
         {
             name: 'Solo', artist: 'Clean bandit', points: 566
@@ -88,19 +88,19 @@ function clickEventExecuter(event) {
             name: 'Lief zoals je bent', artist: 'Maan', points: 96
         },
         {
-            name: 'Darkside', artist: 'Alan Walker', points: 171
+            name: 'Darkside', artist: 'Alan Walker', points: 202
         },
         {
-            name: 'Ik heb je nodig', artist: 'Kraantje Pappie', points: 65
+            name: 'Ik heb je nodig', artist: 'Kraantje Pappie', points: 69
         },
         {
-            name: 'Breathin', artist: 'Ariana Grande', points: 78
+            name: 'Breathin', artist: 'Ariana Grande', points: 98
         },
         {
             name: 'In my feelings', artist: 'Drake', points: 378
         },
         {
-            name: 'IJskoud', artist: 'Nielson', points: 57
+            name: 'IJskoud', artist: 'Nielson', points: 81
         },
         {
             name: 'Losing it', artist: 'Fisher', points: 20
@@ -121,7 +121,7 @@ function clickEventExecuter(event) {
             name: 'All my friends', artist: 'The Revivalists', points: 40
         },
         {
-            name: 'Culo', artist: 'Bizzey', points: 86
+            name: 'Culo', artist: 'Bizzey', points: 114
         },
         {
             name: 'One kiss', artist: 'Calvin Harris', points: 897
@@ -130,7 +130,7 @@ function clickEventExecuter(event) {
             name: 'You let me walk alone', artist: 'Michael Schulte', points: 92
         },
         {
-            name: 'New light', artist: 'John Mayer', points: 34
+            name: 'New light', artist: 'John Mayer', points: 41
         },
         {
             name: 'Body', artist: 'Loud Luxury', points: 226
@@ -205,13 +205,13 @@ function clickEventExecuter(event) {
             name: 'These days', artist: 'Rudimental', points: 598
         },
         {
-            name: 'Shallow', artist: 'Lady Gaga', points: 63
+            name: 'Shallow', artist: 'Lady Gaga', points: 89
         },
         {
-            name: 'Girls like you', artist: 'Maroon 5', points: 189
+            name: 'Girls like you', artist: 'Maroon 5', points: 208
         },
         {
-            name: 'Wild wild son', artist: 'Armin van Buuren', points: 36
+            name: 'Wild wild son', artist: 'Armin van Buuren', points: 46
         },
         {
             name: 'Omarm me', artist: 'Ronnie Flex', points: 34
@@ -412,16 +412,16 @@ function clickEventExecuter(event) {
             name: 'Beautiful trauma', artist: 'P!nk', points: 224
         },
         {
-            name: 'Sunflower', artist: 'Post Malone', points: 39
+            name: 'Sunflower', artist: 'Post Malone', points: 56
         },
         {
-            name: 'Mia', artist: 'Bad Bunny', points: 21
+            name: 'Mia', artist: 'Bad Bunny', points: 34
         },
         {
-            name: 'Woman like me', artist: 'Little Mix', points: 17
+            name: 'Woman like me', artist: 'Little Mix', points: 31
         },
         {
-            name: 'Remedy', artist: 'Alesso', points: 9
+            name: 'Remedy', artist: 'Alesso', points: 11
         },
         {
             name: 'Sick boy', artist: 'the Chainsmokers', points: 65
@@ -520,13 +520,22 @@ function clickEventExecuter(event) {
             name: 'New rules', artist: 'Dua Lipa', points: 1
         },
         {
-            name: 'Sweet But Psycho', artist: 'Ava Max', points: 25
+            name: 'Sweet But Psycho', artist: 'Ava Max', points: 62
         },
         {
-            name: 'Close To Me', artist: 'Ellie Goulding', points: 17
+            name: 'Close To Me', artist: 'Ellie Goulding', points: 40
         },
         {
-            name: 'Happy now', artist: 'Kygo', points: 8
+            name: 'Happy now', artist: 'Kygo', points: 20
+        },
+        {
+            name: 'Thank u, next', artist: 'Ariana Grande', points: 25
+        },
+        {
+            name: 'Dreamer', artist: 'Martin Garrix', points: 8
+        },
+        {
+            name: "When The Party's over", artist: 'Billie Eilish', points: 6
         }
     ];
 
