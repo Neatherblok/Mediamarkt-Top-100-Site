@@ -14,6 +14,309 @@ function goBackExecuter(event) {
 
 function clickEventExecuter(event) {
 
+    var top100list_2017 = [
+        {
+            name: 'Shape Of You', artist: 'Ed Sheeran', points: 906
+        },
+        {
+            name: 'Despacito', artist: 'Luis Fonsi', points: 905
+        },
+        {
+            name: "It ain't me", artist: 'Kygo', points: 866
+        },
+        {
+            name: 'Mama', artist: 'Jonas Blue', points: 738
+        },
+        {
+            name: 'Up till dawn', artist: 'Lucas & Steve', points: 695
+        },
+        {
+            name: 'More than you know', artist: 'Axwell ^ Ingrosso', points: 678
+        },
+        {
+            name: "There's nothing holdin' me back", artist: 'Shawn Mendes', points: 665
+        },
+        {
+            name: 'Mi gente', artist: 'J. Balvin', points: 654
+        },
+        {
+            name: 'What about us', artist: 'P!nk', points: 649
+        },
+        {
+            name: 'Symphony', artist: 'Clean bandit', points: 644
+        },
+        {
+            name: 'New Rules', artist: 'Dua Lipa', points: 634
+        },
+        {
+            name: 'Ra!n', artist: 'the Scr!pt', points: 603
+        },
+        {
+            name: 'Scared to be lonely', artist: 'Martin Garrix', points: 596
+        },
+        {
+            name: 'Call on me (Ryan Riback Remix)', artist: 'Starley', points: 593
+        },
+        {
+            name: 'Sunny days', artist: 'Armin van Buuren', points: 586
+        },
+        {
+            name: 'Something just like this', artist: 'The Chainsmokers', points: 585
+        },
+        {
+            name: '2U', artist: 'David Guetta', points: 583
+        },
+        {
+            name: 'Ciao Adios', artist: 'Anne-Marie', points: 571
+        },
+        {
+            name: 'Castle on the hill', artist: 'Ed Sheeran', points: 548
+        },
+        {
+            name: 'Weak', artist: 'AJR', points: 537
+        },
+        {
+            name: 'Without you', artist: 'Avicii', points: 536
+        },
+        {
+            name: 'Reggaetón Lento (remix)', artist: 'CNCO', points: 523
+        },
+        {
+            name: 'Rockabye', artist: 'Clean Bandit', points: 522
+        },
+        {
+            name: "Say you won't let go", artist: 'James Arthur', points: 517
+        },
+        {
+            name: 'Dusk till dawn', artist: 'Zayn', points: 514
+        },
+        {
+            name: 'Energie', artist: 'Ronnie Flex', points: 508
+        },
+        {
+            name: 'Thunder', artist: 'Imagine Dragons', points: 505
+        },
+        {
+            name: 'Too good at goodbyes', artist: 'Sam Smith', points: 496
+        },
+        {
+            name: "I'm the one", artist: 'DJ Khalid', points: 490
+        },
+        {
+            name: "You don't know me - Na Na Ay!", artist: 'Jax Jones', points: 486
+        },
+        {
+            name: 'Feels', artist: 'Calvin Harris', points: 483
+        },
+        {
+            name: 'Súbeme la radio', artist: 'Enrique Iglesias', points: 463
+        },
+        {
+            name: 'Perfect', artist: 'Ed Sheeran', points: 460
+        },
+        {
+            name: 'Havana', artist: 'Camila Cabello', points: 460
+        },
+        {
+            name: 'Paris', artist: 'The Chainsmokers', points: 444
+        },
+        {
+            name: 'Scars to your beautiful', artist: 'Alessia Cara', points: 427
+        },
+        {
+            name: 'Stargazing', artist: 'Kygo', points: 425
+        },
+        {
+            name: 'Swalla', artist: 'Jason Derulo', points: 421
+        },
+        {
+            name: 'Unforgettable', artist: 'French Montana', points: 418
+        },
+        {
+            name: 'Rockstar', artist: 'Post Malone', points: 417
+        },
+        {
+            name: 'Chained To The Rhythm', artist: 'Katy Perry', points: 417
+        },
+        {
+            name: 'Galway Girl', artist: 'Ed Sheeran', points: 413
+        },
+        {
+            name: 'Wild Thoughts', artist: 'DJ Khalid', points: 404
+        },
+        {
+            name: 'What lovers do', artist: 'Maroon 5', points: 395
+        },
+        {
+            name: 'Friends', artist: 'Justin Bieber', points: 384
+        },
+        {
+            name: 'Stay', artist: 'Zedd', points: 380
+        },
+        {
+            name: 'I feel it coming', artist: 'The Weeknd', points: 369
+        },
+        {
+            name: 'La Colegiala', artist: 'The Boy Next Door', points: 366
+        },
+        {
+            name: "I don't wanna live forever", artist: 'Zayn', points: 364
+        },
+        {
+            name: 'Attent!on', artist: 'Charlie Puth', points: 361
+        },
+        {
+            name: 'Slow hands', artist: 'Niall Horan', points: 359
+        },
+        {
+            name: 'Habiba', artist: 'Boef', points: 354
+        },
+        {
+            name: 'There for you', artist: 'Martin Garrix', points: 347
+        },
+        {
+            name: 'Krantenwijk', artist: 'Lil Kleine', points: 345
+        },
+        {
+            name: 'Voy a Bailar', artist: 'Ali B', points: 333
+        },
+        {
+            name: 'Issues', artist: 'Julia Michaels', points: 318
+        },
+        {
+            name: 'Tuesday', artist: 'Burak Yeter', points: 312
+        },
+        {
+            name: 'Love me now', artist: 'John Legend', points: 292
+        },
+        {
+            name: 'Patsergedrag', artist: 'Sevn Alias', points: 284
+        },
+        {
+            name: 'Wolves', artist: 'Selena Gomez', points: 276
+        },
+        {
+            name: 'Tempo', artist: 'Jairzinho', points: 276
+        },
+        {
+            name: 'No lie', artist: 'Sean Paul', points: 276
+        },
+        {
+            name: 'Know no better', artist: 'Major Lazor', points: 275
+        },
+        {
+            name: 'Too much to ask', artist: 'Niall Horan', points: 274
+        },
+        {
+            name: 'Your song', artist: 'Rita Ora', points: 272
+        },
+        {
+            name: 'Whatever it takes', artist: 'Imagine Dragons', points: 256
+        },
+        {
+            name: 'Dancing on my own', artist: 'Calum Scott', points: 253
+        },
+        {
+            name: 'September song', artist: 'JP. Cooper', points: 253
+        },
+        {
+            name: 'Silence', artist: 'Marshmello', points: 252
+        },
+        {
+            name: 'This town', artist: 'Niall Horan', points: 251
+        },
+        {
+            name: 'Feel it still', artist: 'Portugal. The Man', points: 248
+        },
+        {
+            name: 'Mind made up', artist: 'Wulf', points: 238
+        },
+        {
+            name: 'Alleen', artist: 'Lil Kleine', points: 233
+        },
+        {
+            name: 'Malibu', artist: 'Miley Cyrus', points: 228
+        },
+        {
+            name: 'Slide', artist: 'Calvin Harris', points: 227
+        },
+        {
+            name: 'Nervous (The Ooh Song)', artist: 'Gavin James', points: 226
+        },
+        {
+            name: 'Come again', artist: 'Ronnie Flex', points: 218
+        },
+        {
+            name: '24K magic', artist: 'Bruno Mars', points: 213
+        },
+        {
+            name: 'Passionfruit', artist: 'Drake', points: 208
+        },
+        {
+            name: 'I need you', artist: 'Armin van Buuren', points: 206
+        },
+        {
+            name: 'Back to you', artist: 'Louis Tomlinson', points: 202
+        },
+        {
+            name: '4X Duurder', artist: 'SBMG', points: 201
+        },
+        {
+            name: 'Bad things', artist: 'Machine Gun Kelly', points: 199
+        },
+        {
+            name: 'Skin', artist: "Rag'n'bone Man", points: 194
+        },
+        {
+            name: 'Starboy', artist: 'The Weeknd', points: 180
+        },
+        {
+            name: 'Are you sure?', artist: 'Kris Kross Amsterdam', points: 178
+        },
+        {
+            name: 'Look what you made me do', artist: 'Taylor Swift', points: 174
+        },
+        {
+            name: 'How l?ng', artist: 'Charlie Puth', points: 170
+        },
+        {
+            name: 'Loterij', artist: 'Lil Kleine', points: 168
+        },
+        {
+            name: 'Try again', artist: "Chef'Special", points: 166
+        },
+        {
+            name: 'Anywhere', artist: 'Rita Ora', points: 162
+        },
+        {
+            name: 'Sign of the times', artist: 'Harry Styles', points: 162
+        },
+        {
+            name: 'Mercy', artist: 'Shawn Mendes', points: 159
+        },
+        {
+            name: 'Run up', artist: 'Major Lazor', points: 157
+        },
+        {
+            name: 'First Time', artist: 'Kygo', points: 152
+        },
+        {
+            name: 'Engeltje', artist: 'Jebroer', points: 142
+        },
+        {
+            name: 'Human', artist: "Rag'n'bone Man", points: 139
+        },
+        {
+            name: 'Shed a light', artist: 'Robin Schulz', points: 135
+        },
+        {
+            name: 'Sorry', artist: 'Kensington', points: 133
+        },
+        {
+            name: 'My way', artist: 'Calvin Harris', points: 131
+        }
+    ];
+
     var top100list_2018 = [
         {
             name: 'Verleden tijd', artist: 'Frenna', points: 427
@@ -589,11 +892,11 @@ function clickEventExecuter(event) {
         console.log("--------------------------------------------")
         list2018();
     }
-    /*else if (value == 2017) {
+    else if (value == 2017) {
         console.log("NEW: start loading top 100 list of 2017.")
         console.log("--------------------------------------------")
         list2017();
-    }*/
+    }
     else {
         if (!document.getElementById("selectionScreen").contains(document.getElementById("p"))) {
             const pCreate = document.createElement("p")
@@ -682,6 +985,50 @@ function clickEventExecuter(event) {
         const goBackButton = document.getElementById('goBack');
         goBackButton.addEventListener('click', goBackExecuter);
         console.log("NEW: top 100 list of 2018 has been loaded succesfully.")
+        console.log("--------------------------------------------")
+    }
+
+    function list2017() {
+
+        const tbody = document.createElement("tbody");
+
+        var byDate = top100list_2017.slice(0);
+        byDate.sort(function (a, b) {
+            return b.points - a.points;
+        });
+        //console.log(byDate)
+
+        for (i = 1; i - 1 < 100; i++) {
+            const song = byDate[i - 1];
+            let songName = Object.values(song)[0];
+            let songArtist = Object.values(song)[1];
+            let songPoints = Object.values(song)[2];
+            songPoints = Number(songPoints);
+            const tr = document.createElement("tr");
+            const name = document.createElement("td");
+            const artist = document.createElement("td");
+            const points = document.createElement("td");
+            const container = document.createElement("div");
+            container.classList.add("circle")
+            container.innerHTML = i;
+            name.innerHTML = `<strong>${songName}</strong>`;
+            artist.innerHTML = songArtist;
+            points.innerHTML = songPoints;
+            tr.appendChild(container);
+            tr.appendChild(name);
+            tr.appendChild(artist);
+            tr.appendChild(points);
+            tbody.appendChild(tr);
+            //console.log(songName);
+            //console.log(songArtist);
+            //console.log(songPoints);
+            //console.log('--------------------')
+        }
+
+        table(tbody)
+        const goBackButton = document.getElementById('goBack');
+        goBackButton.addEventListener('click', goBackExecuter);
+        console.log("NEW: top 100 list of 2017 has been loaded succesfully.")
         console.log("--------------------------------------------")
     }
 }
